@@ -1,0 +1,233 @@
+/**************
+MOBILE FIRST
+**************/
+/*FONTS*/
+@font-face {
+  font-family: ProximaNovaLight, ProximaNovaBold, ProximaNovaRegular;
+  src: url("../webfonts/Proxima_Nova_Light.ttf");
+  src: url("../webfonts/Proxima_Nova_Bold.ttf");
+  src: url("../webfonts/Proxima_Nova_Regular.ttf");
+}
+/*VARIABELEN*/
+/*Spacing*/
+.ml-7{
+  margin-left: 300px;
+}
+.mr-7{
+  margin-right: 573px;
+}
+.pt-7{
+  padding-top: 53px;
+}
+.mr-8{
+  margin-right: 280px;
+}
+.mt-7{
+  margin-top: 117px;
+}
+.pr-7{
+  padding-right: 91px;
+}
+.ml-8{
+  margin-left: 857px;
+}
+.ml-9{
+  margin-left: 330px;
+}
+.mr-9{
+  margin-right: 340px;
+}
+$colorSections : #f6f6f6;
+
+/*BEGIN GENERAL CLASSES*/
+body{
+  font-family: ProximaNovaRegular;
+  font-size: 1rem;
+  //width: 100%;
+}
+#header{
+  background-image:
+      linear-gradient(to top right, rgba(203,0,53,0.8), rgba(224,105,0,0.8)), url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  //background-color: rgb(215,51,27);
+}
+/*Om het hamburgermenu te wijzigen. Hebben een class bijgemaakt in HTML */
+.custom-toggler.navbar-toggler {
+  border-color: grey;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url(
+  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(98, 98, 98, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*EINDE GENERAL CLASSES*/
+/*BEGIN NAVIGATIE*/
+.navbar-brand {
+  #drone {
+    font-family: ProximaNovaBold;
+  }
+  p {
+    color: white;
+    font-size: 2rem;
+    font-family: ProximaNovaLight;
+  }
+}
+nav{
+  ul{
+    li{
+      a{
+        color: white;
+      }
+    }
+  }
+  .btn{
+    color: white;
+    border-color: white;
+  }
+}
+/*EINDE NAVIGATIE*/
+
+/*BEGIN SECTIONFILM*/
+#header{
+  #film{
+    color: white;
+    h1{
+      font-family: ProximaNovaBold;
+      text-align: center;
+      margin-top: 202px;
+      font-size: 36px;
+    }
+    p{
+      text-align: center;
+    }
+    #btn1{
+      color: white;
+      border-color: white;
+      font-family: ProximaNovaLight;
+      /*margin-left: 749px;
+      padding-left: 57px;
+      padding-right: 57px;*/
+
+    }
+    #btn2{
+      color: white;
+      border-color: white;
+      font-family: ProximaNovaLight;
+      /* margin-left: 20px;
+       padding-left: 32px;
+       padding-right: 32px;*/
+      .fa-play{
+        margin-right: 22px;
+      }
+    }
+  }
+}
+
+/*EINDE SECTIONFILM*/
+/*BEGIN myInfo*/
+#myInfo{
+  background-color: $colorSections;
+  h2{
+    font-family: ProximaNovaBold;
+  }
+  .btn{
+    color: white;
+    background-color: #0c5460;
+    border-color: #0c5460 ;
+    font-family: ProximaNovaLight ;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /*padding-right: 45px;
+    padding-left: 45px;*/
+  }
+}
+/*EINDE myInfo*/
+/*myDrone*/
+/*nature*/
+#nature{
+  background-color: $colorSections;
+  #video1{
+    width: 93%;
+  }
+  h2{
+    margin-top: 177px;
+    margin-bottom: 30px;
+  }
+  p{
+    margin-right: 295px;
+    margin-bottom: 57px;
+  }
+
+}
+/*myCity*/
+#myCity{
+  #video2{
+    width: 97%;
+  }
+  h2{
+    margin-top: 165px;
+    margin-left: 295px;
+    margin-bottom: 30px;
+  }
+  p{
+    margin-left: 295px;
+    margin-right: 127px;
+    margin-bottom: 57px;
+  }
+  .btn{
+    margin-left: 295px;
+  }
+}
+/*myForm*/
+#myForm{
+  background-image: linear-gradient(to top right, rgba(203,0,53,0.8), rgba(224,105,0,0.8)), url("../img/newsletterbg.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+}
+/*myMap*/
+
+/*BEGIN FOOTER*/
+/*EINDE FOOTER*/
+/*************************
+SCREENS LARGER THEN MOBILE
+**************************/
+/*sm*/
+
+@media (min-width: 576px) {}
+/*md*/
+
+@media (min-width: 768px) {}
+/*lg*/
+@media (min-width: 992px) {
+}
+/*BEGIN CAROUSEL*/
+/*EINDE CAROUSEL*/
+/*xl*/
+@media (min-width: 1200px) {
+  /*Begin SectionFilm*/
+  #film{
+    p{
+      margin-left: 680px;
+      margin-right: 680px;
+    }
+    #btn1{
+      margin-left: 749px;
+      padding-left: 57px;
+      padding-right: 57px;
+    }
+    #btn2{
+       margin-left: 20px;
+       padding-left: 32px;
+       padding-right: 32px;
+    }
+  }
+}
+/*Begin SectionmyInfo*/
+#myInfo{
+  .btn{
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+}
